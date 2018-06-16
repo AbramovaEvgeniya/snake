@@ -51,6 +51,19 @@ namespace Snake
             }
 
         }
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+            {
+                return x + ", " + y + ", " + sym;
+            }
+        }
 
         public void Draw()
         {
