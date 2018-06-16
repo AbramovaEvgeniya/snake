@@ -57,12 +57,16 @@ namespace Snake
             Draw();
         }
 
-        public override string ToString()
+        //public override string ToString()
+        //{
+        //    return base.ToString();
+        //    {
+        //        return x + ", " + y + ", " + sym;
+        //    }
+        //}
+        public bool IsHit(Point p)
         {
-            return base.ToString();
-            {
-                return x + ", " + y + ", " + sym;
-            }
+            return p.x == this.x && p.y == this.y;
         }
 
         public void Draw()
